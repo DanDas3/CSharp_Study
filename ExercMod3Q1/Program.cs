@@ -17,14 +17,16 @@ namespace ExercMod3Q1
 
             for (int i = 0; i < 4; i++)
             {
-                Console.WriteLine("Insir a nota:");
+                Console.WriteLine("Inserir a nota:");
                 nota = double.Parse(Console.ReadLine());
 
-                Console.WriteLine("Insir o peso:");
+                Console.WriteLine("Inserir o peso:");
                 peso = double.Parse(Console.ReadLine());
 
                 media += (nota * peso);
+                Console.WriteLine(media);
                 totalPeso += peso;
+                Console.WriteLine(totalPeso);
             }
 
             Console.WriteLine("Média: " + media/totalPeso);
