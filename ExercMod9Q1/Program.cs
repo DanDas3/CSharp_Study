@@ -18,11 +18,14 @@ namespace ExercMod9Q1
             {
                 c1.Depositar(-20.5);
             }
-            catch (Exception e)
+            catch (ValorInvalidoException e)
             {
-
+                Console.WriteLine(e.Message);
                 
             }
+
+            Console.WriteLine("Pressione alguma tecla para continuar...");
+            Console.ReadLine();
         }
     }
 }
