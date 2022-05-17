@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "1lioQcJeR/OyKKCqvgtD1jobTfKCqHJbwAQQdWpW/fQjYuTyp6DXEwXrhj+7zuFWnmeT5bcHvRb6WwdJe5omqg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\danil\\Documents\\GitHub\\CSharp_Study\\CrossPlatform\\RecifeUniversity\\RecifeUniversity\\RecifeUniversity.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\danil\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.16\\microsoft.netcore.app.host.win-x64.5.0.16.nupkg.sha512"
+  ],
+  "logs": []
+}
