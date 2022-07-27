@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
+using System.Configuration;
 
 namespace Agenda.DAO
 {
@@ -12,7 +13,8 @@ namespace Agenda.DAO
 
         public Contatos()
         {
-            connectionString = @"Data Source = .\MSSQLSERVER02; Initial Catalog = Agenda; Integrated Security = True;";
+            // TODO tirar a senha ao subir para o GitHub.
+            // connectionString = ConfigurationManager.ConnectionStrings["con"].ConnectionString;
             connection = new SqlConnection(connectionString);
         }
         public int Inserir(Contato contato)

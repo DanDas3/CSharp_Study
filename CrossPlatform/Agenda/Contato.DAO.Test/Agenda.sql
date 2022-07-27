@@ -1,0 +1,8 @@
+CREATE DATABASE $(DatabaseName)
+GO
+
+CREATE TABLE $(DatabaseName).dbo.Contato (
+    Id UNIQUEIDENTIFIER PRIMARY KEY NOT NULL,
+    Nome NVARCHAR(100) NOT NULL
+);
+GO

@@ -1,10 +1,8 @@
-﻿using System;
-
-namespace Agenda.Domain
+﻿namespace Agenda.Domain
 {
     public class Contato
     {
-        public Guid Id { get; set; }
-        public string Nome { get; set; }
+        public Guid Id { get; set; } = Guid.Empty;
+        public string Nome { get; set; } = String.Empty;
     }
 }

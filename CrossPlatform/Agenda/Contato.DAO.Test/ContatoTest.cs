@@ -6,7 +6,7 @@ using Agenda.Domain;
 namespace Agenda.DAO.Test
 {
     [TestFixture]
-    public class ContatoTest
+    public class ContatoTest : BaseTest
     {
         Contatos contatos;
 
@@ -23,7 +23,7 @@ namespace Agenda.DAO.Test
             Contato contato = new Contato()
             {
                 Id = Guid.NewGuid(),
-                Nome = "Joao"
+                Nome = "Teste Ubuntu 2"
             };
             // Executa
             int ret = contatos.Inserir(contato);
