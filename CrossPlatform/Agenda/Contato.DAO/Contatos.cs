@@ -12,7 +12,7 @@ namespace Agenda.DAO
 
         public Contatos()
         {
-            connectionString = @"Data Source = .\MSSQLSERVER02; Initial Catalog = Agenda; Integrated Security = True;";
+            connectionString = @"Data Source = localhost; Initial Catalog = Agenda; Integrated Security = True;";
             connection = new SqlConnection(connectionString);
         }
         public int Inserir(Contato contato)
