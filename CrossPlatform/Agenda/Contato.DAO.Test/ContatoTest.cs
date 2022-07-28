@@ -23,7 +23,8 @@ namespace Agenda.DAO.Test
             Contato contato = new Contato()
             {
                 Id = Guid.NewGuid(),
-                Nome = "Joao"
+                //Nome = "Paulo"
+                Nome = "Ricardo"
             };
             // Executa
             int ret = contatos.Inserir(contato);
@@ -40,7 +41,8 @@ namespace Agenda.DAO.Test
             Contato contato = new Contato()
             {
                 Id = Guid.NewGuid(),
-                Nome = "Mariana"
+                //Nome = "Mariana"
+                Nome = "Maria"
             };
             Contato contatoRetornado = new Contato();
             contatos.Inserir(contato);
