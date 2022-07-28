@@ -16,7 +16,7 @@ namespace Agenda.DAO.Test
             var conf = ConfigurationManager.OpenExeConfiguration("Contato.DAO.Test.dll");
             var connectiosStrings = conf.ConnectionStrings.ConnectionStrings;
 
-            _script = "AgendaDatabase_create.sql";
+            _script = "AgendaDatabase_Create.sql";
             _con = connectiosStrings["conSetUpTest"].ConnectionString;
             _catalogTest = connectiosStrings["conSetUpTest"].ProviderName;
         }
