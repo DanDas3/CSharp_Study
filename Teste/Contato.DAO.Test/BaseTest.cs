@@ -1,6 +1,8 @@
 ﻿using NUnit.Framework;
+using System;
 using System.Configuration;
 using System.Data.SqlClient;
+using System.IO;
 
 namespace Agenda.DAO.Test
 {
@@ -13,12 +15,14 @@ namespace Agenda.DAO.Test
 
         public BaseTest()
         {
-            var conf = ConfigurationManager.OpenExeConfiguration("Contato.DAO.Test.dll");
-            var connectiosStrings = conf.ConnectionStrings.ConnectionStrings;
+            //var conf = ConfigurationManager.OpenExeConfiguration("Contato.DAO.Test.dll");
+            //var connectiosStrings = conf.ConnectionStrings.ConnectionStrings;
 
-            _script = "AgendaDatabase_create.sql";
-            _con = connectiosStrings["conSetUpTest"].ConnectionString;
-            _catalogTest = connectiosStrings["conSetUpTest"].ProviderName;
+            _script = "AgendaDatabase_Create.sql";
+            //_con = connectiosStrings["conSetUpTest"].ConnectionString;
+            _con = ConfigurationManager.ConnectionStrings["conSetUpTest"].ConnectionString;
+            //_catalogTest = connectiosStrings["conSetUpTest"].ProviderName;
+            _catalogTest = ConfigurationManager.ConnectionStrings["conSetUpTest"].ProviderName;
         }
 
         [OneTimeSetUp]
@@ -55,16 +59,35 @@ namespace Agenda.DAO.Test
         {
             using (var cmd = con.CreateCommand())
             {
-                foreach (var sql in scriptSql.Split("|"))
+                var comandos = scriptSql.Split('|');
+
+                if (comandos.Length > 0)
                 {
-                    cmd.CommandText = sql;
+                    foreach (var sql in comandos)
+                    {
+                        cmd.CommandText = sql;
+                        try
+                        {
+                            cmd.ExecuteNonQuery();
+                        }
+                        catch (Exception e)
+                        {
+                            Console.WriteLine(sql);
+                            Console.WriteLine(e.Message);
+                            throw;
+                        }
+                    }
+                }
+                else
+                {
+                    cmd.CommandText = scriptSql;
                     try
                     {
                         cmd.ExecuteNonQuery();
                     }
                     catch (Exception e)
                     {
-                        Console.WriteLine(sql);
+                        Console.WriteLine(scriptSql);
                         Console.WriteLine(e.Message);
                         throw;
                     }

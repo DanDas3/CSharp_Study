@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using NUnit.Framework;
+﻿using NUnit.Framework;
 using Agenda.Domain;
 
 namespace Agenda.DAO.Test
@@ -23,7 +21,8 @@ namespace Agenda.DAO.Test
             Contato contato = new Contato()
             {
                 Id = Guid.NewGuid(),
-                Nome = "Teste Ubuntu 2"
+                //Nome = "Paulo"
+                Nome = "Ricardo"
             };
             // Executa
             int ret = contatos.Inserir(contato);
@@ -40,7 +39,8 @@ namespace Agenda.DAO.Test
             Contato contato = new Contato()
             {
                 Id = Guid.NewGuid(),
-                Nome = "Mariana"
+                //Nome = "Mariana"
+                Nome = "Maria"
             };
             Contato contatoRetornado = new Contato();
             contatos.Inserir(contato);

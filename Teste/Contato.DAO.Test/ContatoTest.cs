@@ -6,7 +6,7 @@ using Agenda.Domain;
 namespace Agenda.DAO.Test
 {
     [TestFixture]
-    public class ContatoTest
+    public class ContatoTest : BaseTest
     {
         Contatos contatos;
 

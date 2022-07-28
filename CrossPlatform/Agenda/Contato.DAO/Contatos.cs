@@ -13,8 +13,10 @@ namespace Agenda.DAO
 
         public Contatos()
         {
-            // TODO tirar a senha ao subir para o GitHub.
-            // connectionString = ConfigurationManager.ConnectionStrings["con"].ConnectionString;
+            var conf = ConfigurationManager.OpenExeConfiguration("Contato.DAO.Test.dll");
+
+            connectionString = conf.ConnectionStrings.ConnectionStrings["con"].ConnectionString;
+            //connectionString = @"Data Source = localhost; Initial Catalog = Agenda; Integrated Security = True;";
             connection = new SqlConnection(connectionString);
         }
         public int Inserir(Contato contato)
