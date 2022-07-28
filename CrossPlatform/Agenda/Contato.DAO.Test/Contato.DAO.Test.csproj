@@ -17,4 +17,10 @@
     <ProjectReference Include="..\Contato.DAO\Contato.DAO.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="AgendaDatabase_Create.sql">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>
