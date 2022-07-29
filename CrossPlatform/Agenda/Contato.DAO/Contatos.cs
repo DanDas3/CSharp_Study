@@ -16,6 +16,8 @@ namespace Agenda.DAO
             var conf = ConfigurationManager.OpenExeConfiguration("Contato.DAO.Test.dll");
 
             connectionString = conf.ConnectionStrings.ConnectionStrings["con"].ConnectionString;
+            connectionString = connectionString.Replace("#SQLUSER",System.Environment.GetEnvironmentVariable("SQLUSER"));
+            connectionString = connectionString.Replace("#SQLPASS", System.Environment.GetEnvironmentVariable("SQLPASS"));
             //connectionString = @"Data Source = localhost; Initial Catalog = Agenda; Integrated Security = True;";
             connection = new SqlConnection(connectionString);
         }
