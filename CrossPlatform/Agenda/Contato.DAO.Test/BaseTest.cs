@@ -19,9 +19,16 @@ namespace Agenda.DAO.Test
             _script = "AgendaDatabase_Create.sql";
             _con = connectiosStrings["conSetUpTest"].ConnectionString;
             _catalogTest = connectiosStrings["conSetUpTest"].ProviderName;
+            
+            _con = FormatConnectionString(_con, EnvironmentVariableTarget.Machine);
+        }
 
-            _con = _con.Replace("#SQLUSER",System.Environment.GetEnvironmentVariable("SQLUSER"));
-            _con = _con.Replace("#SQLPASS", System.Environment.GetEnvironmentVariable("SQLPASS"));
+        private string FormatConnectionString(string connectionString, EnvironmentVariableTarget target)
+        {
+            connectionString = connectionString.Replace("#SQLUSER",System.Environment.GetEnvironmentVariable("SQLUSER", target));
+            connectionString = connectionString.Replace("#SQLPASS", System.Environment.GetEnvironmentVariable("SQLPASS",target));
+
+            return connectionString;
         }
 
         [OneTimeSetUp]
