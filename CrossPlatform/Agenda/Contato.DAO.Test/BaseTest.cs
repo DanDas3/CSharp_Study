@@ -19,14 +19,55 @@ namespace Agenda.DAO.Test
             _script = "AgendaDatabase_Create.sql";
             _con = connectiosStrings["conSetUpTest"].ConnectionString;
             _catalogTest = connectiosStrings["conSetUpTest"].ProviderName;
-            
-            _con = FormatConnectionString(_con, EnvironmentVariableTarget.Machine);
+            _con = GetConnectionStringByOS();
+        }
+
+        private string GetConnectionStringByOS()
+        {
+            string connectionString = "";
+            switch (Environment.OSVersion.Platform)
+            {
+                case PlatformID.Win32S:
+                    connectionString = GetConnectionStringWithIntegratedSecurity();
+                    break;
+                case PlatformID.Win32Windows:
+                    connectionString = GetConnectionStringWithIntegratedSecurity();
+                    break;
+                case PlatformID.Win32NT:
+                    connectionString = GetConnectionStringWithIntegratedSecurity();
+                    break;
+                case PlatformID.WinCE:
+                    connectionString = GetConnectionStringWithIntegratedSecurity();
+                    break;
+                case PlatformID.Unix:
+                    connectionString = FormatConnectionString(connectionString, EnvironmentVariableTarget.Machine);
+                    break;
+                case PlatformID.Xbox:
+                    connectionString = GetConnectionStringWithIntegratedSecurity();
+                    break;
+                case PlatformID.MacOSX:
+                    connectionString = FormatConnectionString(connectionString, EnvironmentVariableTarget.Machine);
+                    break;
+                case PlatformID.Other:
+                    connectionString = FormatConnectionString(connectionString, EnvironmentVariableTarget.Machine);
+                    break;
+                default:
+                    connectionString = FormatConnectionString(connectionString, EnvironmentVariableTarget.Machine);
+                    break;
+            }
+
+            return connectionString;
+        }
+
+        private string GetConnectionStringWithIntegratedSecurity()
+        {
+            return @"Data Source = localhost; Initial Catalog = Agenda; Integrated Security = True;";
         }
 
         private string FormatConnectionString(string connectionString, EnvironmentVariableTarget target)
         {
-            connectionString = connectionString.Replace("#SQLUSER",System.Environment.GetEnvironmentVariable("SQLUSER", target));
-            connectionString = connectionString.Replace("#SQLPASS", System.Environment.GetEnvironmentVariable("SQLPASS",target));
+            connectionString = connectionString.Replace("#SQLUSER",Environment.GetEnvironmentVariable("SQLUSER", target));
+            connectionString = connectionString.Replace("#SQLPASS", Environment.GetEnvironmentVariable("SQLPASS",target));
 
             return connectionString;
         }
