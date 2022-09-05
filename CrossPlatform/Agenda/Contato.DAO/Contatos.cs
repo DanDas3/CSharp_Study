@@ -20,14 +20,13 @@ namespace Agenda.DAO
             //connectionString = connectionString.Replace("#SQLPASS", System.Environment.GetEnvironmentVariable("SQLPASS"));
             //connectionString = @"Data Source = localhost; Initial Catalog = Agenda; Integrated Security = True;";
 
-            connectionString = GetConnectionStringByOS();
+            connectionString = GetConnectionStringByOS(connectionString);
 
             connection = new SqlConnection(connectionString);
         }
 
-        private string GetConnectionStringByOS()
+        private string GetConnectionStringByOS(string connectionString)
         {
-            string connectionString = "";
             switch (Environment.OSVersion.Platform)
             {
                 case PlatformID.Win32S:

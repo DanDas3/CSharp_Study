@@ -19,12 +19,11 @@ namespace Agenda.DAO.Test
             _script = "AgendaDatabase_Create.sql";
             _con = connectiosStrings["conSetUpTest"].ConnectionString;
             _catalogTest = connectiosStrings["conSetUpTest"].ProviderName;
-            _con = GetConnectionStringByOS();
+            _con = GetConnectionStringByOS(_con);
         }
 
-        private string GetConnectionStringByOS()
+        private string GetConnectionStringByOS(string connectionString)
         {
-            string connectionString = "";
             switch (Environment.OSVersion.Platform)
             {
                 case PlatformID.Win32S:
