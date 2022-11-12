@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "5VpwWLts9pp/EuHCYbFgL4nhmy3jIHb7mjtlmwnXBEBPvsQ0nDvdQlVIkDEi64G92tOCHka8akXs3z0tdkq/rg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\danil\\Documentos\\GitHub\\CSharp_Study\\CrossPlatform\\TestNinja\\TestNinja,.UnitTests\\TestNinja.UnitTests.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\danil\\.nuget\\packages\\microsoft.codecoverage\\16.5.0\\microsoft.codecoverage.16.5.0.nupkg.sha512",
+    "C:\\Users\\danil\\.nuget\\packages\\microsoft.net.test.sdk\\16.5.0\\microsoft.net.test.sdk.16.5.0.nupkg.sha512",
+    "C:\\Users\\danil\\.nuget\\packages\\nunit\\3.12.0\\nunit.3.12.0.nupkg.sha512",
+    "C:\\Users\\danil\\.nuget\\packages\\nunit3testadapter\\3.16.1\\nunit3testadapter.3.16.1.nupkg.sha512"
+  ],
+  "logs": []
+}
