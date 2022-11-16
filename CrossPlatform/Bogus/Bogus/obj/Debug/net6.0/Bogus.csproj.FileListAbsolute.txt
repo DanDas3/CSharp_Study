@@ -1,0 +1,12 @@
+C:\Users\danil\Documents\GitHub\CSharp_Study\CrossPlatform\Bogus\Bogus\bin\Debug\net6.0\Bogus.deps.json
+C:\Users\danil\Documents\GitHub\CSharp_Study\CrossPlatform\Bogus\Bogus\bin\Debug\net6.0\Bogus.dll
+C:\Users\danil\Documents\GitHub\CSharp_Study\CrossPlatform\Bogus\Bogus\bin\Debug\net6.0\Bogus.pdb
+C:\Users\danil\Documents\GitHub\CSharp_Study\CrossPlatform\Bogus\Bogus\obj\Debug\net6.0\Bogus.csproj.AssemblyReference.cache
+C:\Users\danil\Documents\GitHub\CSharp_Study\CrossPlatform\Bogus\Bogus\obj\Debug\net6.0\Bogus.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\danil\Documents\GitHub\CSharp_Study\CrossPlatform\Bogus\Bogus\obj\Debug\net6.0\Bogus.AssemblyInfoInputs.cache
+C:\Users\danil\Documents\GitHub\CSharp_Study\CrossPlatform\Bogus\Bogus\obj\Debug\net6.0\Bogus.AssemblyInfo.cs
+C:\Users\danil\Documents\GitHub\CSharp_Study\CrossPlatform\Bogus\Bogus\obj\Debug\net6.0\Bogus.csproj.CoreCompileInputs.cache
+C:\Users\danil\Documents\GitHub\CSharp_Study\CrossPlatform\Bogus\Bogus\obj\Debug\net6.0\Bogus.dll
+C:\Users\danil\Documents\GitHub\CSharp_Study\CrossPlatform\Bogus\Bogus\obj\Debug\net6.0\refint\Bogus.dll
+C:\Users\danil\Documents\GitHub\CSharp_Study\CrossPlatform\Bogus\Bogus\obj\Debug\net6.0\Bogus.pdb
+C:\Users\danil\Documents\GitHub\CSharp_Study\CrossPlatform\Bogus\Bogus\obj\Debug\net6.0\ref\Bogus.dll

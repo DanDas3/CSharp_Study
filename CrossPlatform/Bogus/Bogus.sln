@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32602.215
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BogusFrame", "Bogus\BogusFrame.csproj", "{9DB892C4-6756-4D41-AE2D-EC8057CD59BC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BogusTestProject", "BogusTestProject\BogusTestProject.csproj", "{5B2B55CA-3157-4970-AD7E-C84AC91601B2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9DB892C4-6756-4D41-AE2D-EC8057CD59BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9DB892C4-6756-4D41-AE2D-EC8057CD59BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9DB892C4-6756-4D41-AE2D-EC8057CD59BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9DB892C4-6756-4D41-AE2D-EC8057CD59BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B2B55CA-3157-4970-AD7E-C84AC91601B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B2B55CA-3157-4970-AD7E-C84AC91601B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B2B55CA-3157-4970-AD7E-C84AC91601B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B2B55CA-3157-4970-AD7E-C84AC91601B2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E8AEE89C-7CE4-4388-8723-B283CDC1F695}
+	EndGlobalSection
+EndGlobal
