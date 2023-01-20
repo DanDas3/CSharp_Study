@@ -1,8 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculadoraDigital", "CalculadoraDigital\CalculadoraDigital.csproj", "{7559E733-9B47-47BC-A8CC-2AD745D6054D}"
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32630.192
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CalculadoraDigital", "CalculadoraDigital\CalculadoraDigital.csproj", "{7559E733-9B47-47BC-A8CC-2AD745D6054D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculadoraDigitalTest", "CalculadoraDigitalTest\CalculadoraDigitalTest.csproj", "{8085AF42-B4EE-4992-873F-382D94453A39}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CalculadoraDigitalTest", "CalculadoraDigitalTest\CalculadoraDigitalTest.csproj", "{8085AF42-B4EE-4992-873F-382D94453A39}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test", "Test\Test.csproj", "{34FA962D-F6F8-4351-B949-05FF0B7705A7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -18,5 +23,15 @@ Global
 		{8085AF42-B4EE-4992-873F-382D94453A39}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8085AF42-B4EE-4992-873F-382D94453A39}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8085AF42-B4EE-4992-873F-382D94453A39}.Release|Any CPU.Build.0 = Release|Any CPU
+		{34FA962D-F6F8-4351-B949-05FF0B7705A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34FA962D-F6F8-4351-B949-05FF0B7705A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34FA962D-F6F8-4351-B949-05FF0B7705A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34FA962D-F6F8-4351-B949-05FF0B7705A7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8255756C-D298-498B-943E-0302C90ABA6F}
 	EndGlobalSection
 EndGlobal
